@@ -1,0 +1,139 @@
+//锻炼使用scss的一些用法
+$basewidth: 80px;
+$topcolor: #eafbff;
+$bottomcolor: #5290f9;
+$transitionduration: 0.6s;
+$transitiontm: linear;
+
+.body {
+    background-color: $topcolor;
+    //注意linear-gradient是gradient类型属于image的子类型，所以可以被用于background-image属性
+    background-image: linear-gradient(to bottom,
+            $topcolor 0%,
+            $topcolor 50%,
+            $bottomcolor 50%,
+            $bottomcolor 100%);
+    font-family: 'Muli', sans-serif;
+    //弹性布局水平垂直居中的一种经典的手法
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+
+    nav {
+        //box-sizing定义如何计算一个元素的总宽度和总高度
+        box-sizing: border-box;
+        background-color: #fff;
+        //定义内边距以及宽度，同时指定了水平垂直居中
+        padding: 20px;
+        width: $basewidth;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //一种比较经典的边框组合设计
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        //transition属性用于指定某个属性的变化效果，例如下面就指定了width属性变化时,使用linear的变化效果，并且变化的时间为0.6s
+        transition: width $transitionduration $transitiontm;
+        //当一个块级元素内容在水平方向上发生溢出时，决定截断溢出内容或者显示滚动条。
+        //这里设置为隐藏溢出内容
+        overflow-x: hidden;
+
+        ul {
+            display: flex;
+            //下面这些设置是为了去掉浏览器的一些默认样式
+            //这个属性是设定列表项元素的marker样式的，常见的设置例如,disc,character,等
+            //none表示去掉列表项的marker
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 0;
+            //transition属性用于指定某个属性的变化效果，例如下面就指定了width属性变化时,使用linear的变化效果，并且变化的时间为$transitionduration
+            transition: width $transitionduration $transitiontm;
+
+            li {
+                //transform属性用于针对给定对象进行旋转，缩放，平移，倾斜的操作。
+                //rotateY表示指定元素围绕Y轴旋转，这一种3d的效果。
+                transform: rotateY(0deg);
+                //opacity属性表示本节点的透明度，0表示完全透明
+                opacity: 0;
+                //指定翻转以及透明度的变化效果
+                transition: transform $transitionduration $transitiontm, opacity $transitionduration $transitiontm;
+            }
+
+            a {
+                position: relative;
+                color: #000;
+                //设置文本的修饰线外观的，在这里主要是为了去掉a标签默认的下划线
+                text-decoration: none;
+                //设置a标签的左右外边距
+                margin: 0 10px;
+            }
+        }
+
+    }
+
+    nav.active {
+        width: 350px;
+
+        ul {
+            width: 100%;
+
+            li {
+                opacity: 1;
+                transform: rotateY(360deg);
+            }
+        }
+
+        .icon {
+            .line1 {
+                transform: rotate(-765deg) translateY(5.5px);
+            }
+
+            .line2 {
+                transform: rotate(765deg) translateY(-5.5px);
+            }
+        }
+    }
+
+
+    .icon {
+        background-color: #fff;
+        //去掉边框，内边距，其实就是为了去掉button的一些默认样式
+        border: 0;
+        padding: 0;
+        //cursor属性设置光标的类型，在鼠标指针悬停在元素上时候显示相应的样式
+        //pointer表示悬浮与连接上时通常为手
+        cursor: pointer;
+
+        position: relative;
+        height: 30px;
+        width: 30px;
+
+        .line {
+            background-color: #5290f9;
+            //设计删除符号图标的样式
+            height: 2px;
+            width: 20px;
+            position: absolute;
+            //设计删除符号图表距离左边和上面的距离
+            top: 10px;
+            left: 5px;
+            transition: transform $transitionduration $transitiontm;
+        }
+
+        .line2 {
+            //表示定位元素的上外边距边界与其包含块上边界之间的偏移
+            top: auto;
+            //定位元素下外边距边界与其包含块下边界之间的偏移
+            bottom: 10px;
+        }
+    }
+
+    .icon:focus {
+        //outline属性是在一条声明中设置多个轮廓属性
+        //:focus伪类时获得焦点时的状态
+        outline: 0;
+    }
+}

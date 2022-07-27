@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Muli';
+  font-display: auto;
+  src: url(./font/NotoSansSC-Light.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

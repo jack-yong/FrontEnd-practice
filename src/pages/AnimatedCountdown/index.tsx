@@ -10,7 +10,7 @@ const AnimatedCountDown = (props: props) => {
     const [instatus, setInStatus] = useState(true);
     const [outStatus, setOutStatus] = useState(false);
     const [hide, setHide] = useState(false);
-    const animation = (e: any) => {
+    const animation = (e: React.AnimationEvent<HTMLSpanElement>) => {
         if (e.animationName === styles.goIn) {
             setInStatus(false);
             setOutStatus(true);
@@ -41,7 +41,7 @@ const AnimatedCountDown = (props: props) => {
 
             <div className={classNames(styles.final, { [styles.show]: hide })}>
                 <h1>GO</h1>
-                <button className={classNames(styles.replay)} onClick={() => { setNum(3); setHide(false); }}>
+                <button className={classNames(styles.replay)} onClick={() => { setNum(props.num); setHide(false); }}>
                     <span>Replay</span>
                 </button>
             </div>

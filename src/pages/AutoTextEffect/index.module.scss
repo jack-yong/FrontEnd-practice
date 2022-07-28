@@ -1,0 +1,37 @@
+.body {
+    background-color: darksalmon;
+    font-family: 'Muli', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+    div {
+        //使用决定定位会导致元素脱离文档流
+        position: absolute;
+        //给出bottom属性给出了距离底部边框的距离
+        bottom: 20px;
+        //rgb的值以及透明度
+        background: rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    input {
+        width: 50px;
+        padding: 5px;
+        font-size: 18px;
+        background-color: darksalmon;
+        border: none;
+        text-align: center;
+    }
+
+    //当输入框获得焦点的时候去掉轮廓，和boder相比不占据空间，绘制在元素周围
+    input:focus {
+        outline: none;
+    }
+}

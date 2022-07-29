@@ -1,0 +1,99 @@
+.body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    //为每一个背景图片设置初始位置
+    //其实给一个center是一样的
+    background-position: center center;
+    //设置背景图片大小，图片可以保持原有图片的尺寸，或者拉伸到新的尺寸
+    //cover这个属性值的意思是缩放背景图片以完全覆盖背景区，可能背景图片部分看不见。与contain值相反
+    background-size: cover;
+
+    transition: 0.4s;
+}
+
+// 总的来说这里主要是为了给body加上一层灰色的蒙版效果
+.body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    //设置基础的背景颜色以及对应的透明度
+    background-color: rgba(0, 0, 0, 0.7);
+    //设置背景图片的图层,设置为图层要比slider低一级别,这样设置的额效果是图层在sliderContainer之下
+    z-index: 0;
+}
+
+.sliderContainer {
+    //设置slider的阴影效果
+    //当设置的值为四个时，每个值分别表示 x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影颜色 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    //因为全局设置的都是border-box所以这里面应用的也是border-box
+    height: 70vh;
+    width: 70vw;
+    //相对定位
+    position: relative;
+    //超出的部分就隐藏
+    overflow: hidden;
+}
+
+//变换图片的背景,叠加在已有的背景图片之上的
+.slider {
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    //设置top和left主要是为了使得sider的背景图片和body的背景图片能够匹配上
+    top: -15vh;
+    left: -15vw;
+    //定义元素在不同状态值之间进行切换的效果
+    //当缺失要切换的元素值的时候，默认为all
+    transition: 0.4s ease;
+    z-index: 1;
+}
+
+
+
+.arrow {
+    position: fixed;
+    //设置背景颜色
+    //这里的transparent表示透明
+    background-color: transparent;
+    color: #fff;
+    //设置内边距
+    padding: 20px;
+    //设置字体大小
+    //这里设置的就是图标大小
+    font-size: 30px;
+    border: 2px solid orange;
+    //定位元素的上外边距边界与其包含块上边界之间的偏移
+    //这里的百分比针对的是包含块高度的百分比
+    top: 50%;
+    //用于平移元素，这里的50%表示的是当前元素的百分比
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow:focus {
+    outline: 0;
+}
+
+.leftArrow {
+    //定义了定位元素的左外边距边界与其包含块左边界之间的偏移
+    //这里偏移了15vw并且减去了本元素自身的宽度
+    left: calc(15vw - 65px);
+}
+
+.rightArrow {
+    right: calc(15vw - 65px);
+}

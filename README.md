@@ -21,14 +21,6 @@
 
 下方列出了已经完成的demo.
 
-| demo名称           | 完成情况 |
-| :----------------- | :------: |
-| AnimatedCountdown  |    👌     |
-| AnimatedNavigation |    👌     |
-| AutoTextEffect     |    👌     |
-| BackgroundSlider   |    👌     |
-| BlurryLoading      |    👌     |
-
 |  #   |             demo名称              | 完成情况 |
 | :--: | :-------------------------------: | :------: |
 |  01  |        **Expanding Cards**        |    😥     |

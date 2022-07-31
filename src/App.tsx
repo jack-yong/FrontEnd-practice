@@ -4,7 +4,8 @@ import React from 'react';
 // import AnimatedNavigation from './pages/AnimatedNavigation';
 // import AutoTextEffect from './pages/AutoTextEffect';
 // import BackgroundSlider from './pages/BackgroundSlider';
-import BlurryLoading from './pages/BlurryLoading';
+// import BlurryLoading from './pages/BlurryLoading';
+import ButtonRippleEffect from './pages/ButtonRippleEffect';
 function App() {
   return (
     <div >
@@ -13,7 +14,8 @@ function App() {
       {/* <AnimatedNavigation /> */}
       {/* <AutoTextEffect /> */}
       {/* <BackgroundSlider /> */}
-      <BlurryLoading />
+      {/* <BlurryLoading /> */}
+      <ButtonRippleEffect />
     </div>
   );
 

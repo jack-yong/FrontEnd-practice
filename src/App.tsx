@@ -5,7 +5,8 @@ import React from 'react';
 // import AutoTextEffect from './pages/AutoTextEffect';
 // import BackgroundSlider from './pages/BackgroundSlider';
 // import BlurryLoading from './pages/BlurryLoading';
-import ButtonRippleEffect from './pages/ButtonRippleEffect';
+// import ButtonRippleEffect from './pages/ButtonRippleEffect';
+import ContentPlaceholder from './pages/ContentPlaceholder';
 function App() {
   return (
     <div >
@@ -15,7 +16,8 @@ function App() {
       {/* <AutoTextEffect /> */}
       {/* <BackgroundSlider /> */}
       {/* <BlurryLoading /> */}
-      <ButtonRippleEffect />
+      {/* <ButtonRippleEffect /> */}
+      <ContentPlaceholder />
     </div>
   );
 

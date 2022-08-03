@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-const Clock = (props: any) => {
+const Clock = () => {
     return (
         <div className={styles.clock}>Clock</div>
     )

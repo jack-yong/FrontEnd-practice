@@ -32,7 +32,7 @@
 |  07  |      **Split Landing Page**       |    😥     |
 |  08  |           **Form Wave**           |    😥     |
 |  09  |          **Sound Board**          |    😥     |
-|  10  |           **Dad Jokes**           |    😥     |
+|  10  |           **Dad Jokes**           |     👌     |
 |  11  |        **Event Keycodes**         |    😥     |
 |  12  |         **Faq Collapse**          |    😥     |
 |  13  |     **Random Choice Picker**      |    😥     |

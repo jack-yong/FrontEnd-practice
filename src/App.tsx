@@ -7,7 +7,8 @@ import React from 'react';
 // import BlurryLoading from './pages/BlurryLoading';
 // import ButtonRippleEffect from './pages/ButtonRippleEffect';
 // import ContentPlaceholder from './pages/ContentPlaceholder';
-import CustomRangeSlider from './pages/CustomRangeSlider';
+// import CustomRangeSlider from './pages/CustomRangeSlider';
+import DadJokes from './pages/DadJokes';
 function App() {
   return (
     <div >
@@ -19,7 +20,8 @@ function App() {
       {/* <BlurryLoading /> */}
       {/* <ButtonRippleEffect /> */}
       {/* <ContentPlaceholder /> */}
-      <CustomRangeSlider />
+      {/* <CustomRangeSlider /> */}
+      <DadJokes />
     </div>
   );
 

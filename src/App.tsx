@@ -8,7 +8,8 @@ import React from 'react';
 // import ButtonRippleEffect from './pages/ButtonRippleEffect';
 // import ContentPlaceholder from './pages/ContentPlaceholder';
 // import CustomRangeSlider from './pages/CustomRangeSlider';
-import DadJokes from './pages/DadJokes';
+// import DadJokes from './pages/DadJokes';
+import DoubleClickHeart from './pages/DoubleClickHeart';
 function App() {
   return (
     <div >
@@ -21,7 +22,8 @@ function App() {
       {/* <ButtonRippleEffect /> */}
       {/* <ContentPlaceholder /> */}
       {/* <CustomRangeSlider /> */}
-      <DadJokes />
+      {/* <DadJokes /> */}
+      <DoubleClickHeart />
     </div>
   );
 

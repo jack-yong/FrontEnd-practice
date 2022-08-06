@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontendpractice=self.webpackChunkfrontendpractice||[]).push([[448],{448:function(n,e,c){c.r(e),c.d(e,{default:function(){return s}});c(791);var a="loading_cell__79QGR",r="loading_spinner__Lafc9",i=c(184),s=function(){return(0,i.jsx)("div",{className:a,children:(0,i.jsx)("div",{className:r})})}}}]);
+//# sourceMappingURL=448.0776aceb.chunk.js.map

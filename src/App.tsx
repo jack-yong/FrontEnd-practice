@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 // import Clock from './pages/Clock';
 // import AnimatedCountDown from './pages/AnimatedCountdown';
 // import AnimatedNavigation from './pages/AnimatedNavigation';
@@ -9,10 +10,26 @@ import React from 'react';
 // import ContentPlaceholder from './pages/ContentPlaceholder';
 // import CustomRangeSlider from './pages/CustomRangeSlider';
 // import DadJokes from './pages/DadJokes';
-import DoubleClickHeart from './pages/DoubleClickHeart';
+// import DoubleClickHeart from './pages/DoubleClickHeart';
+// import DoubleVerticalSlider from './pages/DoubleVerticalSlider';
+// import Main from './pages/Main';
+const Main = lazy(() => import('./pages/Main'));
+const AnimatedCountDown = lazy(() => import('./pages/AnimatedCountdown'));
+const AnimatedNavigation = lazy(() => import('./pages/AnimatedNavigation'));
+const AutoTextEffect = lazy(() => import('./pages/AutoTextEffect'));
+const BackgroundSlider = lazy(() => import('./pages/BackgroundSlider'));
+const BlurryLoading = lazy(() => import('./pages/BlurryLoading'));
+const ButtonRippleEffect = lazy(() => import('./pages/ButtonRippleEffect'));
+const ContentPlaceholder = lazy(() => import('./pages/ContentPlaceholder'));
+const CustomRangeSlider = lazy(() => import('./pages/CustomRangeSlider'));
+const DadJokes = lazy(() => import('./pages/DadJokes'));
+const DoubleClickHeart = lazy(() => import('./pages/DoubleClickHeart'));
+const DoubleVerticalSlider = lazy(() => import('./pages/DoubleVerticalSlider'));
+const Loading = lazy(() => import('./components/loading'));
+
 function App() {
   return (
-    <div >
+    <BrowserRouter >
       {/* <Clock /> */}
       {/* <AnimatedCountDown num={3} /> */}
       {/* <AnimatedNavigation /> */}
@@ -23,8 +40,27 @@ function App() {
       {/* <ContentPlaceholder /> */}
       {/* <CustomRangeSlider /> */}
       {/* <DadJokes /> */}
-      <DoubleClickHeart />
-    </div>
+      {/* <DoubleClickHeart /> */}
+      {/* <DoubleVerticalSlider /> */}
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/AnimatedCountDown' element={<AnimatedCountDown num={3} />} />
+          <Route path='/AnimatedNavigation' element={<AnimatedNavigation />} />
+          <Route path='/AutoTextEffect' element={<AutoTextEffect />} />
+          <Route path='/BackgroundSlider' element={<BackgroundSlider />} />
+          <Route path='/BlurryLoading' element={<BlurryLoading />} />
+          <Route path='/ButtonRippleEffect' element={<ButtonRippleEffect />} />
+          <Route path='/ContentPlaceholder' element={<ContentPlaceholder />} />
+          <Route path='/CustomRangeSlider' element={<CustomRangeSlider />} />
+          <Route path='/DadJokes' element={<DadJokes />} />
+          <Route path='/DoubleClickHeart' element={<DoubleClickHeart />} />
+          <Route path='/DoubleVerticalSlider' element={<DoubleVerticalSlider />} />
+          <Route path='*' element={<Navigate to='/' replace />} />
+        </Routes>
+      </Suspense>
+
+    </BrowserRouter>
   );
 
 }

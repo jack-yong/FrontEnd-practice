@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import styles from './index.module.scss';
 
-const index = () => {
+const ButtonRippleEffect = () => {
 
     const [display, setDisplay] = useState(false);
     const [offset, setOffSet] = useState({ offsetX: 0, offsetY: 0 });
@@ -24,4 +24,4 @@ const index = () => {
     )
 }
 
-export default index
+export default ButtonRippleEffect;

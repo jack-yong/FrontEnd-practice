@@ -27,8 +27,6 @@ const DoubleClickHeart = () => {
                 clickTimeRef.current = new Date().getTime();
             }
         }
-
-
     }
 
     const showHeart = (offsetX: number, offsetY: number) => {

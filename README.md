@@ -48,7 +48,7 @@
 |  23  |        **Kinetic Loader**         |    😥     |
 |  24  |      **Content Placeholder**      |    👌     |
 |  25  |         **Sticky Navbar**         |    😥     |
-|  26  |    **Double Vertical Slider**     |    😥     |
+|  26  |    **Double Vertical Slider**     |    👌     |
 |  27  |      **Toast Notification**       |    😥     |
 |  28  |        **Github Profiles**        |    😥     |
 |  29  |      **Double Click Heart**       |    👌     |

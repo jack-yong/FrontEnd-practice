@@ -21,15 +21,17 @@ $shadowcolor: rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 100%;
     width: 800px;
+
+    h3 {
+        margin: 0;
+        //设置字体的透明度
+        opacity: 0.5;
+        //设置字体间距
+        letter-spacing: 2px;
+    }
 }
 
-h3 {
-    margin: 0;
-    //设置字体的透明度
-    opacity: 0.5;
-    //设置字体间距
-    letter-spacing: 2px;
-}
+
 
 .joke {
     font-size: 30px;

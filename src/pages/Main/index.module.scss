@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+$basewidth: 40px;
+$baseheight: 80px;
+$translateY: -5px;
+$baseRadius: 10px;
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    // width: 60vw;
+}
+
+.mytitle {
+    font-family: 'Karla', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: rgba($color: #1890ff, $alpha: 0.6);
+
+}
+
+.box {
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    grid-auto-rows: minmax($baseheight, auto);
+    font-family: 'Karla', sans-serif;
+    background-color: #fff;
+    border: 2px solid #1890ff;
+    border-radius: $baseRadius;
+    padding: 20px;
+    margin: 10px;
+
+    .card {
+        // width: $basewidth;
+        height: $baseheight;
+        border-radius: $baseRadius;
+        // cursor: pointer;
+        position: relative;
+        transform: translate(0);
+        transition: all 0.3s ease-in-out;
+        padding: 10px;
+        border: 1px rgba(0, 0, 0, 0.3) solid;
+        color: #000;
+        text-decoration: none;
+
+        .title {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+    }
+
+    .card:hover {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        // border: none;
+        transform: translate(0px, $translateY);
+        color: #1890ff;
+
+    }
+
+}

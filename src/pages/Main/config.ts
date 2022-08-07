@@ -43,5 +43,9 @@ export const cardData = [
         title: '双向垂直方向滑动效果',
         to: '/DoubleVerticalSlider',
     },
+    {
+        title: '图片拖拽',
+        to: '/DragNDrop',
+    },
 
 ];

@@ -47,5 +47,9 @@ export const cardData = [
         title: '图片拖拽',
         to: '/DragNDrop',
     },
+    {
+        title: '小画板',
+        to: '/DrawingApp',
+    },
 
 ];

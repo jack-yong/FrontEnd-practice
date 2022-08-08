@@ -27,6 +27,7 @@ const DoubleClickHeart = lazy(() => import('./pages/DoubleClickHeart'));
 const DoubleVerticalSlider = lazy(() => import('./pages/DoubleVerticalSlider'));
 const Loading = lazy(() => import('./components/loading'));
 const DragNDrop = lazy(() => import('./pages/DragNDrop'));
+const DrawingApp = lazy(() => import('./pages/DrawingApp'));
 function App() {
   return (
     <BrowserRouter >
@@ -57,6 +58,7 @@ function App() {
           <Route path='/DoubleClickHeart' element={<DoubleClickHeart />} />
           <Route path='/DoubleVerticalSlider' element={<DoubleVerticalSlider />} />
           <Route path='/DragNDrop' element={<DragNDrop />} />
+          <Route path='/DrawingApp' element={<DrawingApp />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

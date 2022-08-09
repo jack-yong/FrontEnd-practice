@@ -51,5 +51,9 @@ export const cardData = [
         title: '小画板',
         to: '/DrawingApp',
     },
+    {
+        title: '喝水动画',
+        to: '/DrinkWater',
+    },
 
 ];

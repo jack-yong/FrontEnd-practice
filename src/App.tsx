@@ -28,6 +28,7 @@ const DoubleVerticalSlider = lazy(() => import('./pages/DoubleVerticalSlider'));
 const Loading = lazy(() => import('./components/loading'));
 const DragNDrop = lazy(() => import('./pages/DragNDrop'));
 const DrawingApp = lazy(() => import('./pages/DrawingApp'));
+const DrinkWater = lazy(() => import('./pages/DrinkWater'));
 function App() {
   return (
     <BrowserRouter >
@@ -59,6 +60,7 @@ function App() {
           <Route path='/DoubleVerticalSlider' element={<DoubleVerticalSlider />} />
           <Route path='/DragNDrop' element={<DragNDrop />} />
           <Route path='/DrawingApp' element={<DrawingApp />} />
+          <Route path='/DrinkWater' element={<DrinkWater />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

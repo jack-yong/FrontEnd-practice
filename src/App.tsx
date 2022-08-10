@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
 // import Clock from './pages/Clock';
 // import AnimatedCountDown from './pages/AnimatedCountdown';
 // import AnimatedNavigation from './pages/AnimatedNavigation';
@@ -29,9 +29,11 @@ const Loading = lazy(() => import('./components/loading'));
 const DragNDrop = lazy(() => import('./pages/DragNDrop'));
 const DrawingApp = lazy(() => import('./pages/DrawingApp'));
 const DrinkWater = lazy(() => import('./pages/DrinkWater'));
+const EventKeyCodes = lazy(() => import('./pages/EventKeyCodes'));
+
 function App() {
   return (
-    <BrowserRouter >
+    <HashRouter >
       {/* <Clock /> */}
       {/* <AnimatedCountDown num={3} /> */}
       {/* <AnimatedNavigation /> */}
@@ -61,11 +63,12 @@ function App() {
           <Route path='/DragNDrop' element={<DragNDrop />} />
           <Route path='/DrawingApp' element={<DrawingApp />} />
           <Route path='/DrinkWater' element={<DrinkWater />} />
+          <Route path='/EventKeyCodes' element={<EventKeyCodes />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 
 }

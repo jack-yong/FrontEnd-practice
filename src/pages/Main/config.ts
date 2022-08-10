@@ -55,5 +55,9 @@ export const cardData = [
         title: '喝水动画',
         to: '/DrinkWater',
     },
+    {
+        title: '键盘事件',
+        to: '/EventKeyCodes',
+    },
 
 ];

@@ -59,5 +59,9 @@ export const cardData = [
         title: '键盘事件',
         to: '/EventKeyCodes',
     },
+    {
+        title: '扩展卡片',
+        to: '/ExpandingCards',
+    },
 
 ];

@@ -30,6 +30,7 @@ const DragNDrop = lazy(() => import('./pages/DragNDrop'));
 const DrawingApp = lazy(() => import('./pages/DrawingApp'));
 const DrinkWater = lazy(() => import('./pages/DrinkWater'));
 const EventKeyCodes = lazy(() => import('./pages/EventKeyCodes'));
+const ExpandingCards = lazy(() => import('./pages/ExpandingCards'));
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
           <Route path='/DrawingApp' element={<DrawingApp />} />
           <Route path='/DrinkWater' element={<DrinkWater />} />
           <Route path='/EventKeyCodes' element={<EventKeyCodes />} />
+          <Route path='/ExpandingCards' element={<ExpandingCards />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

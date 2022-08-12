@@ -63,5 +63,8 @@ export const cardData = [
         title: '扩展卡片',
         to: '/ExpandingCards',
     },
-
+    {
+        title: '折叠卡片',
+        to: '/FaqCollapse',
+    },
 ];

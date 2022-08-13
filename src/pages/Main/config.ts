@@ -67,4 +67,8 @@ export const cardData = [
         title: '折叠卡片',
         to: '/FaqCollapse',
     },
+    {
+        title: '反馈ui设计',
+        to: '/FeedBackuiDesign',
+    },
 ];

@@ -32,6 +32,7 @@ const DrinkWater = lazy(() => import('./pages/DrinkWater'));
 const EventKeyCodes = lazy(() => import('./pages/EventKeyCodes'));
 const ExpandingCards = lazy(() => import('./pages/ExpandingCards'));
 const FaqCollapse = lazy(() => import('./pages/FaqCollapse'));
+const FeedBackuiDesign = lazy(() => import('./pages/FeedBackuiDesign'))
 function App() {
   return (
     <HashRouter >
@@ -67,6 +68,7 @@ function App() {
           <Route path='/EventKeyCodes' element={<EventKeyCodes />} />
           <Route path='/ExpandingCards' element={<ExpandingCards />} />
           <Route path='/FaqCollapse' element={<FaqCollapse />} />
+          <Route path='/FeedBackuiDesign' element={<FeedBackuiDesign />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

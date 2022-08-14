@@ -30,7 +30,7 @@
 |  05  |        **Blurry Loading**         |    👌     |
 |  06  |       **Scroll Animation**        |    😥     |
 |  07  |      **Split Landing Page**       |    😥     |
-|  08  |           **Form Wave**           |    😥     |
+|  08  |           **Form Wave**           |    👌     |
 |  09  |          **Sound Board**          |    😥     |
 |  10  |           **Dad Jokes**           |     👌     |
 |  11  |        **Event Keycodes**         |    👌     |

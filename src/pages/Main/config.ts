@@ -71,4 +71,8 @@ export const cardData = [
         title: '反馈ui设计',
         to: '/FeedBackuiDesign',
     },
+    {
+        title: '表单输入框动效果',
+        to: '/FormInputWave',
+    },
 ];

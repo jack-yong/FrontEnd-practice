@@ -34,6 +34,7 @@ const ExpandingCards = lazy(() => import('./pages/ExpandingCards'));
 const FaqCollapse = lazy(() => import('./pages/FaqCollapse'));
 const FeedBackuiDesign = lazy(() => import('./pages/FeedBackuiDesign'));
 const FormInputWave = lazy(() => import('./pages/FormInputWave'));
+const GithubProfiles = lazy(() => import('./pages/GithubProfiles'));
 function App() {
   return (
     <HashRouter >
@@ -71,6 +72,7 @@ function App() {
           <Route path='/FaqCollapse' element={<FaqCollapse />} />
           <Route path='/FeedBackuiDesign' element={<FeedBackuiDesign />} />
           <Route path='/FormInputWave' element={<FormInputWave />} />
+          <Route path='/GithubProfiles' element={<GithubProfiles />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

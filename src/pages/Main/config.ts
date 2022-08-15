@@ -75,4 +75,8 @@ export const cardData = [
         title: '表单输入框动效果',
         to: '/FormInputWave',
     },
+    {
+        title: 'github用户搜索',
+        to: '/GithubProfiles',
+    },
 ];

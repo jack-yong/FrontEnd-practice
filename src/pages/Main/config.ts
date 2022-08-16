@@ -72,11 +72,15 @@ export const cardData = [
         to: '/FeedBackuiDesign',
     },
     {
-        title: '表单输入框动效果',
+        title: '输入框动画效果',
         to: '/FormInputWave',
     },
     {
         title: 'github用户搜索',
         to: '/GithubProfiles',
+    },
+    {
+        title: 'Switch开关',
+        to: '/GoodCheapFast',
     },
 ];

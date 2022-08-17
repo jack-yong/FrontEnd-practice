@@ -83,4 +83,8 @@ export const cardData = [
         title: 'Switch开关',
         to: '/GoodCheapFast',
     },
+    {
+        title: '隐藏搜索框',
+        to: '/HiddenSearch',
+    },
 ];

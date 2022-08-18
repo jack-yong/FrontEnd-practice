@@ -37,6 +37,7 @@ const FormInputWave = lazy(() => import('./pages/FormInputWave'));
 const GithubProfiles = lazy(() => import('./pages/GithubProfiles'));
 const GoodCheapFast = lazy(() => import('./pages/GoodCheapFast'));
 const HiddenSearch = lazy(() => import('./pages/HiddenSearch'));
+const HoverBoard = lazy(() => import('./pages/HoverBoard'));
 function App() {
   return (
     <HashRouter >
@@ -77,6 +78,7 @@ function App() {
           <Route path='/GithubProfiles' element={<GithubProfiles />} />
           <Route path='/GoodCheapFast' element={<GoodCheapFast />} />
           <Route path='/HiddenSearch' element={<HiddenSearch />} />
+          <Route path='/HoverBoard' element={<HoverBoard />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

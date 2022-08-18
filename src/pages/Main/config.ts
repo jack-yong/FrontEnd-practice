@@ -87,4 +87,8 @@ export const cardData = [
         title: '隐藏搜索框',
         to: '/HiddenSearch',
     },
+    {
+        title: '悬停画板',
+        to: '/HoverBoard',
+    },
 ];

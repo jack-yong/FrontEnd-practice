@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import styles from './index.module.scss';
 
@@ -32,10 +32,20 @@ const index = () => {
         }
         else {
             const tempactive = active;
-            console.log(tempactive);
+            // console.log(tempactive);
             setActive(tempactive - 1);
         }
     }
+
+    //实现图片预加载
+    useEffect(() => {
+        imagearr.forEach(imgurl => {
+            const img = new Image();
+            img.src = imgurl;
+        });
+    }, [])
+
+
     return (
         <div className={styles.body} style={{ backgroundImage: `url(${imagearr[active]})` }}>
             <div className={styles.sliderContainer}>

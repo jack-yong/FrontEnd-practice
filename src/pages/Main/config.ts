@@ -91,4 +91,8 @@ export const cardData = [
         title: '悬停画板',
         to: '/HoverBoard',
     },
+    {
+        title: '轮播图',
+        to: '/ImageCarousel',
+    },
 ];

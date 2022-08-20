@@ -38,7 +38,8 @@ const GithubProfiles = lazy(() => import('./pages/GithubProfiles'));
 const GoodCheapFast = lazy(() => import('./pages/GoodCheapFast'));
 const HiddenSearch = lazy(() => import('./pages/HiddenSearch'));
 const HoverBoard = lazy(() => import('./pages/HoverBoard'));
-const ImageCarousel = lazy(()=>import('./pages/ImageCarousel'));
+const ImageCarousel = lazy(() => import('./pages/ImageCarousel'));
+const IncrementingCounter = lazy(() => import('./pages/IncrementingCounter'));
 function App() {
   return (
     <HashRouter >
@@ -81,6 +82,7 @@ function App() {
           <Route path='/HiddenSearch' element={<HiddenSearch />} />
           <Route path='/HoverBoard' element={<HoverBoard />} />
           <Route path='/ImageCarousel' element={<ImageCarousel />} />
+          <Route path='/IncrementingCounter' element={<IncrementingCounter />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

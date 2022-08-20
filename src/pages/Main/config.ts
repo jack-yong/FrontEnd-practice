@@ -95,4 +95,8 @@ export const cardData = [
         title: '轮播图',
         to: '/ImageCarousel',
     },
+    {
+        title: '数字增长动效',
+        to: '/IncrementingCounter',
+    },
 ];

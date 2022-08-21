@@ -40,6 +40,7 @@ const HiddenSearch = lazy(() => import('./pages/HiddenSearch'));
 const HoverBoard = lazy(() => import('./pages/HoverBoard'));
 const ImageCarousel = lazy(() => import('./pages/ImageCarousel'));
 const IncrementingCounter = lazy(() => import('./pages/IncrementingCounter'));
+const KineticLoader = lazy(() => import('./pages/KineticLoader'));
 function App() {
   return (
     <HashRouter >
@@ -83,6 +84,7 @@ function App() {
           <Route path='/HoverBoard' element={<HoverBoard />} />
           <Route path='/ImageCarousel' element={<ImageCarousel />} />
           <Route path='/IncrementingCounter' element={<IncrementingCounter />} />
+          <Route path='/KineticLoader' element={<KineticLoader />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

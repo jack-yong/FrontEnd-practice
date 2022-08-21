@@ -99,4 +99,8 @@ export const cardData = [
         title: '数字增长动效',
         to: '/IncrementingCounter',
     },
+    {
+        title: '循环滚动效果',
+        to: '/KineticLoader',
+    },
 ];

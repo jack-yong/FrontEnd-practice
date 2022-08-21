@@ -45,7 +45,7 @@
 |  20  |     **Button Ripple Effect**      |    👌     |
 |  21  |          **Drag N Drop**          |    👌     |
 |  22  |          **Drawing App**          |    👌     |
-|  23  |        **Kinetic Loader**         |    😥     |
+|  23  |        **Kinetic Loader**         |    👌     |
 |  24  |      **Content Placeholder**      |    👌     |
 |  25  |         **Sticky Navbar**         |    😥     |
 |  26  |    **Double Vertical Slider**     |    👌     |

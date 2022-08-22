@@ -41,6 +41,7 @@ const HoverBoard = lazy(() => import('./pages/HoverBoard'));
 const ImageCarousel = lazy(() => import('./pages/ImageCarousel'));
 const IncrementingCounter = lazy(() => import('./pages/IncrementingCounter'));
 const KineticLoader = lazy(() => import('./pages/KineticLoader'));
+const LiveUserFilter = lazy(() => import('./pages/LiveUserFilter'));
 function App() {
   return (
     <HashRouter >
@@ -85,6 +86,7 @@ function App() {
           <Route path='/ImageCarousel' element={<ImageCarousel />} />
           <Route path='/IncrementingCounter' element={<IncrementingCounter />} />
           <Route path='/KineticLoader' element={<KineticLoader />} />
+          <Route path='/LiveUserFilter' element={<LiveUserFilter />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

@@ -64,7 +64,7 @@
 |  39  | **Password Strength Background**  |    😥     |
 |  40  |      **3d Background Boxes**      |    😥     |
 |  41  |       **Verify Account Ui**       |    😥     |
-|  42  |       **Live User Filter**        |    😥     |
+|  42  |       **Live User Filter**        |    👌     |
 |  43  |      **Feedback Ui Design**       |    👌     |
 |  44  |      **Custom Range Slider**      |    👌     |
 |  45  |   **Netflix Mobile Navigation**   |    😥     |

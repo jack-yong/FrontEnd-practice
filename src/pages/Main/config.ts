@@ -103,4 +103,8 @@ export const cardData = [
         title: '循环滚动效果',
         to: '/KineticLoader',
     },
+    {
+        title: '用户动态过滤',
+        to: '/LiveUserFilter',
+    },
 ];

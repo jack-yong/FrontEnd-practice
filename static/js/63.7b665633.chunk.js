@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontendpractice=self.webpackChunkfrontendpractice||[]).push([[63],{7063:function(e,n,c){c.r(n),c.d(n,{default:function(){return a}});c(2791);var t="KineticLoader_body__7EGfK",i="KineticLoader_kinetic__73tZK",r=c(184),a=function(){return(0,r.jsx)("div",{className:t,children:(0,r.jsx)("div",{className:i})})}}}]);
+//# sourceMappingURL=63.7b665633.chunk.js.map

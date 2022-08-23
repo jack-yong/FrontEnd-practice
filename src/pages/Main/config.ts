@@ -107,4 +107,8 @@ export const cardData = [
         title: '用户动态过滤',
         to: '/LiveUserFilter',
     },
+    {
+        title: '手机导航栏',
+        to: '/MobileTabNavigation',
+    },
 ];

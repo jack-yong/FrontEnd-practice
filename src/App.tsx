@@ -42,6 +42,8 @@ const ImageCarousel = lazy(() => import('./pages/ImageCarousel'));
 const IncrementingCounter = lazy(() => import('./pages/IncrementingCounter'));
 const KineticLoader = lazy(() => import('./pages/KineticLoader'));
 const LiveUserFilter = lazy(() => import('./pages/LiveUserFilter'));
+const MobileTabNavigation = lazy(() => import('./pages/MobileTabNavigation'));
+
 function App() {
   return (
     <HashRouter >
@@ -87,6 +89,7 @@ function App() {
           <Route path='/IncrementingCounter' element={<IncrementingCounter />} />
           <Route path='/KineticLoader' element={<KineticLoader />} />
           <Route path='/LiveUserFilter' element={<LiveUserFilter />} />
+          <Route path='/MobileTabNavigation' element={<MobileTabNavigation />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

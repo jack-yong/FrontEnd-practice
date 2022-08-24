@@ -111,4 +111,8 @@ export const cardData = [
         title: '手机导航栏',
         to: '/MobileTabNavigation',
     },
+    {
+        title: '电影app',
+        to: '/MovieApp',
+    },
 ];

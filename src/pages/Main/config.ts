@@ -115,4 +115,8 @@ export const cardData = [
         title: '电影app',
         to: '/MovieApp',
     },
+    {
+        title: 'Netflix导航栏',
+        to: '/NetflixMobileNavigation',
+    },
 ];

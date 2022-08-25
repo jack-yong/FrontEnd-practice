@@ -44,6 +44,7 @@ const KineticLoader = lazy(() => import('./pages/KineticLoader'));
 const LiveUserFilter = lazy(() => import('./pages/LiveUserFilter'));
 const MobileTabNavigation = lazy(() => import('./pages/MobileTabNavigation'));
 const MovieApp = lazy(() => import('./pages/MovieApp'));
+const NetflixMobileNavigation = lazy(() => import('./pages/NetflixMobileNavigation'));
 
 function App() {
   return (
@@ -92,6 +93,7 @@ function App() {
           <Route path='/LiveUserFilter' element={<LiveUserFilter />} />
           <Route path='/MobileTabNavigation' element={<MobileTabNavigation />} />
           <Route path='/MovieApp' element={<MovieApp />} />
+          <Route path='/NetflixMobileNavigation' element={<NetflixMobileNavigation />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </Suspense>

@@ -67,7 +67,7 @@
 |  42  |       **Live User Filter**        |    👌     |
 |  43  |      **Feedback Ui Design**       |    👌     |
 |  44  |      **Custom Range Slider**      |    👌     |
-|  45  |   **Netflix Mobile Navigation**   |    😥     |
+|  45  |   **Netflix Mobile Navigation**   |    👌     |
 |  46  |           **Quiz App**            |    😥     |
 |  47  |   **Testimonial Box Switcher**    |    😥     |
 |  48  |       **Random Image Feed**       |    😥     |
